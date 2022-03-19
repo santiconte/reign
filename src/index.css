@@ -11,3 +11,52 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.pagination {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.pagination button {
+  background-color: white;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin: 0 4px;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #1890ff;
+  color: white;
+  border: 1px solid #1890ff;
+  border-radius: 6px;
+}
+
+.spinner {
+  width: 36px;
+  height: 36px;
+  border: 5px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  border-left-color: black;
+
+  animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
