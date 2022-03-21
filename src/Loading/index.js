@@ -6,7 +6,7 @@ const Loading = ({
     if(value){
         return (
             <div className="loading">
-                <div class="spinner"></div>
+                <div className="spinner"></div>
             </div>
         )
     }else{

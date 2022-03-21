@@ -32,7 +32,11 @@ const News = ({
                 }).finally(res => setIsLoading(false))
             }
         }else{
-            setData(JSON.parse(localStorage.getItem("newsLike")))
+            if(JSON.parse(localStorage.getItem("newsLike"))){
+                setData(JSON.parse(localStorage.getItem("newsLike")))
+            }else{
+                setData([])
+            }
         }
     }
 
@@ -49,7 +53,7 @@ const News = ({
             newsLike = JSON.parse(newsLike)
         }
         var liked = false
-        newsLike.map(item => {
+        newsLike.forEach(item => {
             if(newItem.objectID === item.objectID){
                 liked = true
             }}
@@ -93,8 +97,9 @@ const News = ({
                         onChange={(event) => {setFilterLocal(event.target.value)}} 
                         value={localStorage.getItem("filter")}
                         className="select"
+                        defaultValue={0}
                         >
-                            <option disabled selected >Select your news</option>
+                            <option disabled value={0}>Select your news</option>
                             <option value={"angular"}>Angular</option>
                             <option value={"reactjs"}>Reactjs</option>
                             <option value={"vuejs"}>Vuejs</option>
@@ -102,11 +107,12 @@ const News = ({
                 )}
             </div>
             <div className="newsComponent">
-                {data.map((item) => {
+                {data.map((item,index) => {
                     const {story_title, created_at, author, story_url } = item
                     if(story_title && created_at && author && story_url){
                         return(
-                            <NewComponent 
+                            <NewComponent
+                                keyItem={index}
                                 title={item.story_title}
                                 created_at={item.created_at}
                                 author={item.author}
@@ -130,8 +136,9 @@ const News = ({
                         >
                             <p style={{ margin:0}}> {menor} </p>
                     </button>
-                    {cantPage.map(itemPage => 
-                        <button 
+                    {cantPage.map((itemPage, index) => 
+                        <button
+                            key={index}
                             class={page === itemPage && "active"} 
                             onClick={() => setPage(itemPage)}>
                                 <p style={{ margin:0}}>{itemPage}</p>

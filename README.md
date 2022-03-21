@@ -32,3 +32,4 @@ npm build
 
 ## Web
 
+https://exquisite-brigadeiros-a4a772.netlify.app/

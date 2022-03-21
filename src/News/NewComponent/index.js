@@ -5,6 +5,7 @@ import iconFave from "../../assets/iconmonstr-favorite-3_4.svg"
 import iconTime from "../../assets/iconmonstr-time-2.svg"
 import "./style.css"
 const NewComponent = ({
+    keyItem,
     title,
     created_at,
     author,
@@ -42,7 +43,7 @@ const NewComponent = ({
       }
       
     return (
-        <div className="newComponent">
+        <div className="newComponent" key={keyItem}>
             <div onClick={() => window.open(url)} className="newInfoContainer">
                 <div className="newInfoTop">
                     <img src={iconTime}  height="16px" width="auto"></img>
