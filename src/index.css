@@ -12,6 +12,12 @@ code {
     monospace;
 }
 
+div.mainContainer{
+  background-color: #fcfcfc;
+  display:flex; 
+  flex-direction: column;
+}
+
 .loading{
   width: 100%;
   height: 100%; 
@@ -42,4 +48,19 @@ code {
   100% {
     transform: rotate(360deg);
   }
+}
+
+@font-face {
+  font-family: 'RobotoRegular';
+  src: local('RobotoRegular'), url(./assets/fonts/RobotoRegular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'RobotoMedium';
+  src: local('RobotoMedium'), url(./assets/fonts/RobotoMedium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Baskerville';
+  src: local('Baskerville'), url(./assets/fonts/Baskerville.ttf) format('truetype');
 }

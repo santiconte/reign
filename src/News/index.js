@@ -16,7 +16,7 @@ const News = ({
       },[switchValue, page]);
 
     const getData = async (page, filter, switchValue) => {
-        
+
         window.scroll({
             top: 0,
             behavior: 'smooth'
@@ -104,7 +104,7 @@ const News = ({
             <div className="newsComponent">
                 {data.map((item) => {
                     const {story_title, created_at, author, story_url } = item
-                    if( story_title && created_at && author && story_url){
+                    if(story_title && created_at && author && story_url){
                         return(
                             <NewComponent 
                                 title={item.story_title}

@@ -4,7 +4,7 @@ import "./style.css"
 const Header = () => {
     return (
         <div className="header">
-            <p>HACKER NEWS</p>
+            <p style={{ fontFamily:"Baskerville"}}>HACKER NEWS</p>
         </div>
     )
 }

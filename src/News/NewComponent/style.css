@@ -28,8 +28,10 @@ div.newInfoTop{
 p.newInfoTopText{
     margin:0px;
     padding-left: 10px;
-    font-size: 14px;
-    color: #767676
+    font-size: 12px;
+    color: #767676;
+    font-family: RobotoRegular;
+    
 }
 
 p.newInfoTitle{
@@ -37,6 +39,7 @@ p.newInfoTitle{
     font-size:15px;
     color: #6b6b6b; 
     margin-top: 10px;
+    font-family: RobotoMedium;
 }
 
 div.newInfoImgContainer{
