@@ -1,0 +1,60 @@
+div.newComponent {
+    background-color: rgba(151, 151, 151,0.06);
+    height: 100px;
+    display: flex; 
+    flex-direction: row;
+    border: solid 1px rgba(151, 151, 151,0.6); 
+    border-radius:6px; 
+    margin-top: 15px;
+}
+
+div.newInfoContainer{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 0px 26px;
+    justify-content: center;
+}
+
+div.newInfoTop{
+    width: 100%;
+    height: 16px; 
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+p.newInfoTopText{
+    margin:0px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #767676
+}
+
+p.newInfoTitle{
+    margin:0px;
+    font-size:15px;
+    color: #6b6b6b; 
+    margin-top: 10px;
+}
+
+div.newInfoImgContainer{
+    width: 15%;
+    display: flex;
+    justify-content: center; 
+    align-items:center;
+    background-color: rgba(96, 96, 96,0.06)
+}
+
+div.newComponent:hover{
+  background-color: rgba(151, 151, 151,0.06)
+}
+
+div.newComponent:hover img{
+  opacity: 0.5;
+}
+
+div.newComponent:hover p{
+  opacity: 0.7;
+}

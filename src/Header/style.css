@@ -1,0 +1,11 @@
+div.header {
+    height: 100px;
+    background: #ececec; 
+    display: flex; 
+    padding-left: 15%;
+    align-items: center;
+}
+div.header p{
+    font-size:28px;
+    font-family: "Baskerville"
+}

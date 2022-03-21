@@ -11,34 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.pagination {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  margin-top: 10px;
-}
 
-.pagination button {
-  background-color: white;
-  float: left;
+.loading{
+  width: 100%;
+  height: 100%; 
+  position: fixed;
+  top: 0px;
+  left:0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
-  transition: background-color .3s;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  margin: 0 4px;
-  height: 32px;
-  width: 32px;
-  cursor: pointer;
-}
-
-.pagination button.active {
-  background-color: #1890ff;
-  color: white;
-  border: 1px solid #1890ff;
-  border-radius: 6px;
+  background-color: rgba(96, 96, 96,0.3);
 }
 
 .spinner {

@@ -1,0 +1,64 @@
+div.main{
+    margin-top: 10px;
+    display: flex; 
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+div.selectContainer{
+    height: 40px; 
+    width: 200px;
+}
+
+select.select{
+    width: 100%;
+    height: 100%; 
+    border: solid 1px #2e2e2e;
+    border-radius: 4px;
+}
+div.newsComponent{
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+    div.newsComponent{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.pagination {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+.pagination button {
+    background-color: white;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin: 0 4px;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+  }
+  
+.pagination button.active {
+    background-color: #1890ff;
+    color: white;
+    border: 1px solid #1890ff;
+    border-radius: 6px;
+  }
+  
